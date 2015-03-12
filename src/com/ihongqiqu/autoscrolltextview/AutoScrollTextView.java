@@ -31,7 +31,7 @@ public class AutoScrollTextView extends TextSwitcher implements
     /**
      * 轮播时间间隔
      */
-    private int scrollDuration = 2000;
+    private int scrollDuration = 3000;
     /**
      * 动画时间
      */
@@ -146,7 +146,7 @@ public class AutoScrollTextView extends TextSwitcher implements
         t.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (itemClickListener != null && textList.size() > 0) {
+                if (itemClickListener != null && textList.size() > 0 && currentId != -1) {
                     itemClickListener.onItemClick(currentId % textList.size());
                 }
             }
