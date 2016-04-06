@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
 
+import android.widget.Toast;
 import java.util.ArrayList;
 
 /**
@@ -36,6 +37,7 @@ public class MainActivity extends Activity {
             @Override
             public void onItemClick(int position) {
                 Log.d("", "position : " + position);
+                Toast.makeText(MainActivity.this, "position : " + position, Toast.LENGTH_SHORT).show();
             }
         });
     }

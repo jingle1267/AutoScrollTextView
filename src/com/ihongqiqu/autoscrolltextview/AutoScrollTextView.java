@@ -98,10 +98,10 @@ public class AutoScrollTextView extends TextSwitcher implements
         };
 
         setFactory(this);
-        Animation in = new TranslateAnimation(0, 0, 100, 0);
+        Animation in = new TranslateAnimation(0, 0, 300, 0);
         in.setDuration(animDuration);
         in.setInterpolator(new AccelerateInterpolator());
-        Animation out = new TranslateAnimation(0, 0, 0, -100);
+        Animation out = new TranslateAnimation(0, 0, 0, -300);
         out.setDuration(animDuration);
         out.setInterpolator(new AccelerateInterpolator());
         setInAnimation(in);
